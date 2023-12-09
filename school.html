@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript"
+    src="http://translate.google.com/translate_a/element.js?cb=translate">
+    </script>
+    <style>
+        *{
+            margin: 0px;
+            padding:0px;
+        }
+        header{
+            display: flex;
+            /* padding:1px; */
+            background-color: darkseagreen;
+        }
+        header li{
+            display: inline;
+            padding: 1px 120px;
+
+        }
+        .img{
+            background-color: deepskyblue;
+            height: 130px;
+        }
+    
+        h2{
+            margin-left:140px ;
+            margin-top: -70px;
+        }
+        .img1{
+            margin-left:1040px;
+            margin-top: -70px;
+        }
+        .nav1{
+            padding: 30px;
+            background-color:aqua;
+            height: 20px;
+        }
+        .nav1 li{
+            display: inline;
+            padding:  40px;   
+        }
+        .nav2{
+            background-color: dimgray;
+            height: 20px;
+            padding: 10px;
+        }
+        .nav3{
+            background-color: mediumseagreen;
+            padding: 10px;
+            width: 250px;
+            height: 140px;
+        }
+        footer{
+            background-color: peru;
+            padding: 10px;
+            height: 20px;
+        }
+        .end li{
+            padding: 10px;
+            display: inline;
+        }
+        .end1{
+            margin-left: 580px;
+            margin-top: 50px;
+        }
+        .imgz1{
+            z-index:-1;
+            position: absolute;
+            display: flex;
+            margin-top:-20px;
+            padding: 20px;
+            animation: imgz 4s linear 0s infinite alternate-reverse;
+        }
+        @keyframes imgz{
+            0%{ right:15px;}
+            100%{ right:300px}
+        }
+        .mesg{
+            margin-top: -20px;
+            z-index: -1;
+        }
+        .msg{
+
+            animation:blink 1s linear infinite ;
+            color:aliceblue;
+        }
+        @keyframes blink {
+            50%{
+                opacity:0;
+            }
+        }
+        .loger{
+            margin-top: -420px;
+            margin-left: 548px;
+        }
+
+        form{
+            border: 3px solid yellow;
+            box-shadow: 2px 8px 10px  skyblue;
+            width:280px;
+            display:flex;
+            flex-direction: column;
+            padding: 10px;
+            margin-left: 500px;
+            margin-top: 100px;
+            background-color: beige;
+        
+        }
+        input{
+            width: 200px;
+            margin-left: 20px;
+            margin-top: 20px;
+            padding: 10px;
+            border: 0px;
+            box-shadow: 4px 8px 10px greenyellow;
+
+        }
+        input[type=submit]{
+            width: 80px;
+            margin-left:80px;
+            padding: 5px;
+            border: 0px;
+            background-color:red;
+            box-shadow: none;
+        }
+        input[type=submit]:hover{
+            background-color: chartreuse;
+        }
+        .fg{
+            margin-left: 143px;
+            margin-top: -20px;
+        }
+        input[type=text]{
+            box-shadow: none;
+            padding: 2px;
+            margin-top: 10px;
+        }
+        .modal {
+            display: none; 
+            position: fixed; 
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div id="chnge"></div>
+    <script type="text/javascript">
+    function translate(){
+        new google.translate.TranslateElement(
+            {pageLanguage:'',layout: google.translate.TranslateElement.InlineLayout.SIMPLE},
+        'chnge'
+        );
+    }
+    </script>
+    <header>
+        <ul type="none"> 
+            <li>feedback</li>
+            <li>oldwebsite</li>
+            <li><a href="#">shift to main content</a></li>
+            <input type = text placeholder="search">   
+        </ul>
+    </header>
+    <div class="img">
+        <img src="C:\Users\Binu\Pictures\Saved Pictures\dow.jpg" width="130px" height="130px">
+        <h2>Loyalty School Of International</h2>
+        <div class="img1">
+        <img src="C:\Users\Binu\Pictures\Saved Pictures\images (3).jpg"width="100px" height="100px">
+        <img src="C:\Users\Binu\Pictures\Saved Pictures\1_16a083e5dc0.2087778_702418701_16a083e5dc0_large.jpg" width="100px" height="100px">
+        <img src="C:\Users\Binu\Pictures\Saved Pictures\1_16a0826bbda.73526_2467848218_16a0826bbda_large.jpg" width="100px" height="100px">
+    </div>
+    </div>
+    <div class="nav1">
+        <ul type="none">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Notifications</a></li>
+            <li><a href="#">Application forms</a></li>
+            <!-- <li><a href="#">Registration</a></li> -->
+            <li><a href="#">Results</a></li>
+            <li><a href="#">Enquiry</a></li>
+            <li><a href="#">online services</a></li>
+            <li><a href="#">Dashboard</a></li>
+            <!-- <li><a href="#">contact Us</a></li>
+            <li><a href="#">RTI</a></li>
+            <li><a href="#">Circulars</a></li> -->
+        </ul>
+    </div>
+    <div class="nav2">
+        <p>Messages</p>
+        <div class="mesg">
+        <marquee class = "msg"> PLAYSCHOOL ADMISSION STARTED</marquee>
+    </div>
+    </div>
+    
+    <div class="imgz1">
+        <img src="C:\Users\Binu\Pictures\Saved Pictures\15.jpg" width="200px" height="300px">
+        <img src="C:\Users\Binu\Pictures\Saved Pictures\15-1.jpg" width="200px" height="300px">
+        <img src="C:\Users\Binu\Pictures\Saved Pictures\15-2.jpg" width="200px" height="300px">
+        <img src="C:\Users\Binu\Pictures\Saved Pictures\15-3.jpg" width="200px" height="300px">
+        <img src="C:\Users\Binu\Pictures\Saved Pictures\1_16a0826bbda.73526_2467848218_16a0826bbda_large.jpg" width="200px" height="300px">
+        <!-- <img src="C:\Users\Binu\Pictures\Saved Pictures\1_16a083e5dc0.2087778_702418701_16a083e5dc0_large.jpg" width="300px" height="200px"> -->
+        <img src="C:\Users\Binu\Pictures\Saved Pictures\images (1).jpg" width="200px" height="300px">
+
+    </div>
+
+    <div class="nav3">
+        <h3>Latest Notification</h3>
+    </div>
+    <div class="nav3">
+        <img src="">
+    </div>
+    <div class="nav4">
+        <h3></h3>
+    </div>
+        <div class=" loger">
+        <button onclick="document.getElementById('id01').style.display='block'">Login</button>
+        <div id="id01" class="modal">
+        <form method="post" action="#">
+        <div class="login"></div>
+        <i class="fa fa-user user"style="font-size:50px"></i>
+        <h1>Login</h1><br>
+        <input type="email" placeholder="enter your mail id">
+        <i class="fa fa-envelope icon"></i><br><br><br>
+        <input type="password" placeholder="enter your password">
+        <i class="fa fa-eye  icon" ></i><br>
+        <input type="submit" value="submit"><br>
+        <a href="">Register</a>
+        <div class="fg">
+        <a href="">Forgot password</a>
+        </div>
+    </div>    
+</form>
+</div>
+    <footer>
+        <div class="end">
+            <ul>
+                <li>disclaimer</li>
+                <li>Archives</li>
+                <li>Help</li>
+            </ul>
+        </div>
+        <div class="end1">
+        <p> @2001 all rights reserved</p>
+        <h5>company selection board</h5>
+        <p>Arnold building New Delhi</p>
+    </div>
+    </footer>
+    <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+        </script>
+        
+        
+</body>
+</html>

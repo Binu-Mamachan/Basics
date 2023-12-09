@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            display: flex;
+            margin-left: 50px;
+            margin-top: 50px;
+        }
+        .box1{
+            display: flex;
+            margin-left: 50px;
+        }
+        .box2{
+            display: flex;
+            margin-left: 50px;
+        }
+        .box3{
+            display: flex;
+            margin-left: 50px;
+        }
+        #getData {
+            width:50px;
+            height:50px;
+            padding:0px;
+            border:1px solid red;
+            
+        }
+        #getDatai{
+            width:50px;
+            height:50px;
+            padding:0px;
+            border:1px solid blue;
+        }
+        #getDataii{
+            width:50px;
+            height:50px;
+            padding:0px;
+            border:1px solid green;
+        }
+        #getDataiii{
+            width:50px;
+            height:50px;
+            padding:0px;
+            border:1px solid brown;
+        }
+        */
+    </style>
+    <script>
+        function allowDrop(even){
+            even.preventDefault();
+        }
+        function drag(even){
+            even.dataTransfer.setData("img",even.target.id);
+        }
+        function drop(even){
+            even.preventDefault();
+            var fetchData=even.dataTransfer.getData("img");
+            even.target.appendChild(document.getElementById(fetchData));
+        }
+
+    let toggle = button => {
+    let element = document.getElementById("final");
+    let hidden = element.getAttribute("hidden");
+    
+    if (hidden) {
+       element.removeAttribute("hidden");
+       img.innerText = "Hide image";
+    } else {
+       element.setAttribute("hidden", "hidden");
+       img.innerText = "Show image";
+    }
+  }
+</script>
+    </script>
+</head>
+<body>
+    <button onclick="toggle(this);">Hide image</button>
+
+<div class="box">
+    <div id="getData"
+        ondrop="drop(event)"
+        ondragover="allowDrop(event)">
+    </div>
+    <br>
+    <div id="getDatai"
+        ondrop="drop(event)"
+        ondragover="allowDrop(event)">
+    </div>
+    <br>
+    <div id="getDataii"
+        ondrop="drop(event)"
+        ondragover="allowDrop(event)">
+    </div>
+    <br>
+    <div id="getDataiii"
+        ondrop="drop(event)"
+        ondragover="allowDrop(event)">
+    </div>
+</div>
+<div class="box1">
+    <div id="getData"
+        ondrop="drop(event)"
+        ondragover="allowDrop(event)">
+    </div>
+    <br>
+    <div id="getDatai"
+        ondrop="drop(event)"
+        ondragover="allowDrop(event)">
+    </div>
+    <br>
+    <div id="getDataii"
+        ondrop="drop(event)"
+        ondragover="allowDrop(event)">
+    </div>
+    <br>
+    <div id="getDataiii"
+        ondrop="drop(event)"
+        ondragover="allowDrop(event)">
+    </div>
+    
+</div>
+<div class="box2">
+    <div id="getData"
+        ondrop="drop(event)"
+        ondragover="allowDrop(event)">
+    </div>
+    <br>
+    <div id="getDatai"
+        ondrop="drop(event)"
+        ondragover="allowDrop(event)">
+    </div>
+    <br>
+    <div id="getDataii"
+        ondrop="drop(event)"
+        ondragover="allowDrop(event)">
+    </div>
+    <br>
+    <div id="getDataiii"
+        ondrop="drop(event)"
+        ondragover="allowDrop(event)">
+    </div>
+    
+</div>
+<div class="box3">
+    <div id="getData"
+        ondrop="drop(event)"
+        ondragover="allowDrop(event)">
+    </div>
+    <br>
+    <div id="getDatai"
+        ondrop="drop(event)"
+        ondragover="allowDrop(event)">
+    </div>
+    <br>
+    <div id="getDataii"
+        ondrop="drop(event)"
+        ondragover="allowDrop(event)">
+    </div>
+    <br>
+    <div id="getDataiii"
+        ondrop="drop(event)"
+        ondragover="allowDrop(event)">
+    </div>
+    
+</div>
+<br>
+    <img id="final" src="C:\Users\Binu\Pictures\3516536.jpg" width="250"height="200"> 
+
+    <img id="dragData2"
+    src="C:\Users\Binu\Pictures\1.jpg"
+    draggable="true"
+    ondragstart="drag(event)"
+    width="50"
+    height="50" -->
+
+   
+
+    <img id="dragData4"
+    src="C:\Users\Binu\Pictures\3.jpg"
+    draggable="true"
+    ondragstart="drag(event)"
+    width="50"
+    height="50" -->
+
+   
+
+    <img id="dragData6"
+    src="C:\Users\Binu\Pictures\5.jpg"
+    draggable="true"
+    ondragstart="drag(event)"
+    width="50"
+    height="50" -->
+
+    <img id="dragData7"
+    src="C:\Users\Binu\Pictures\6.jpg"
+    draggable="true"
+    ondragstart="drag(event)"
+    width="50"
+    height="50" -->
+
+    <img id="dragData3"
+    src="C:\Users\Binu\Pictures\2.jpg"
+    draggable="true"
+    ondragstart="drag(event)"
+    width="50"
+    height="50" -->
+
+    <img id="dragData11"
+    src="C:\Users\Binu\Pictures\10.jpg"
+    draggable="true"
+    ondragstart="drag(event)"
+    width="50"
+    height="50" -->
+
+    <img id="dragData10"src="C:\Users\Binu\Pictures\9.jpg"
+    draggable="true"
+    ondragstart="drag(event)"
+    width="50"
+    height="50" -->
+
+    <img id="dragData17"
+    src="C:\Users\Binu\Pictures\16.jpg"
+    draggable="true"
+    ondragstart="drag(event)"
+    width="50"
+    height="50" --> 
+
+    
+
+    <img id="dragData5"
+    src="C:\Users\Binu\Pictures\4.jpg"
+    draggable="true"
+    ondragstart="drag(event)"
+    width="50"
+    height="50" -->
+
+    <img id="dragData12"
+    src="C:\Users\Binu\Pictures\11.jpg"
+    draggable="true"
+    ondragstart="drag(event)"
+    width="50"
+    height="50" -->
+
+    <img id="dragData8"
+    src="C:\Users\Binu\Pictures\7.jpg"
+    draggable="true"
+    ondragstart="drag(event)"
+    width="50"
+    height="50" -->
+
+    <img id="dragData13"
+    src="C:\Users\Binu\Pictures\12.jpg"
+    draggable="true"
+    ondragstart="drag(event)"
+    width="50"
+    height="50" -->
+
+    <img id="dragData14"
+    src="C:\Users\Binu\Pictures\13.jpg"
+    draggable="true"
+    ondragstart="drag(event)"
+    width="50"
+    height="50" -->
+
+    <img id="dragData15"
+    src="C:\Users\Binu\Pictures\14.jpg"
+    draggable="true"
+    ondragstart="drag(event)"
+    width="50"
+    height="50" -->
+
+    <img id="dragData9"
+    src="C:\Users\Binu\Pictures\8.jpg"
+    draggable="true"
+    ondragstart="drag(event)"
+    width="50"
+    height="50" -->
+
+    <img id="dragData16"
+    src="C:\Users\Binu\Pictures\15.jpg"
+    draggable="true"
+    ondragstart="drag(event)"
+    width="50"
+    height="50" --> 
+</body>
+</html>

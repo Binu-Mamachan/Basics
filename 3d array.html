@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <p id="log"></p> -->
+     <script>
+    //    const arr = [8, 2, 3, 4, 5];
+    //     const average = arr.reduce((a, b) => a + b, 0) / arr.length;
+    //     document.write(average);
+
+        const A = [[[1, 2, 3, 4, 5],[5,6,7,8,9],[8,9,5,4,3]],
+                    [[3,5,4,2,1],[5,7,8,9,6],[8,6,5,4,2]],
+                    [[4,5,7,8,9],[8,2,7,3,4],[2,4,6,3,4]]];
+        var i, j, sub,supr, total, count,counter, avg;
+        total = count = 0;
+        for (i = 0; i < A.length; ++i) {
+        sub = A[i];
+        count += sub.length;
+        for (j = 0; j < sub.length; ++j) {
+        supr=sub[j];
+        counter+=supr.length;
+        for(k = 0; k < supr.length; ++k) {
+        total += supr[k];
+        }
+        
+    }
+}
+avg = counter === 0 ? NaN : total / counter;
+document.write(avg);
+     </script>
+</body>
+</html>

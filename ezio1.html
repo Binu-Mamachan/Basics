@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0px;
+            padding: 0px;
+            /* box-sizing: 0px; */
+        }
+        body{
+            /* background-image:linear-gradient(to right, #fc67fa,#f4c4f3) ; */
+            background-color:whitesmoke;
+        }
+        .plain{
+            /* padding: 40px; */
+            margin-top: 30px;
+            margin-left: 200px;
+            width: 900px;
+            height: 900px;
+            /* background-image: linear-gradient(to right,#662D8C,#ED1E79); */
+            background-image: linear-gradient(to right,#e96443,#904e95); 
+            margin-bottom: 40px;
+            border-radius: 30px;
+        }
+        form{
+            width:350px;
+            height: 700px;
+            background-color: white;
+            padding: 30px;
+            border-radius: 20px;
+
+        }
+        .frm{
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            padding: 30px;
+            margin-top: -900px;
+            margin-left: 600px;
+        }
+        
+        input{
+            width: 300px;
+            padding: 5px;
+            /* outline: none; */
+            /* background: transparent; */
+            /* border-bottom: 2px soid black; */
+            box-sizing: border-box;
+            border: none;
+           border-bottom: 1px solid rgba(0, 0, 0, 0.411);
+           outline: none;
+
+
+            
+        }
+        input[type=submit]{
+            color: #ED1E79;
+            width: 220px;
+            background-color: rgba(47, 79, 79, 0.342);
+            border: 0px;
+            font-weight: bolder;
+            border-radius: 20px;
+            margin-left: 50px;
+        }
+        input[type=submit]:hover{
+            background-color: coral;
+        }
+        #imgz{
+            position:absolute;
+            margin-top: -800px;
+            margin-left: 100px;
+            height: 600px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="plain"></div>
+    <img src="C:\Users\Binu\Downloads\reg_img-removebg-preview.png" id="imgz">
+    <div class="frm">
+    <form method="post" action="#" target="_blank">
+            <h2 style="text-align: center;">Register Here!....</h2><br><br>
+            <label>Full Name</label><br>
+            <input type="text"><br><br>
+            <label>Guardian Name</label><br>
+            <input type="text" ><br><br>
+            <label>Gender</label><br>
+            <select name="M" id="M0"  style=" width: 150px;"><br><br>
+                <option >select</option>
+                <option value="m1" class="mm">Male</option>
+                <option value="m1" class="mm">Female</option>
+            </select><br><br>
+            <label>Nationality</label><br>
+            <input type="text" ><br><br>
+            <label>Email</label><br>
+            <input type="email" ><br><br>
+            <label>Qualification</label><br>
+            <select name="M" id="M0"  style="width:150px ;"><br>
+                <option >select</option>
+                <option value="m1" class="mm">PG</option>
+                <option value="m1" class="mm">UG</option>
+                <option value="m1" class="mm">Diploma/PlusTwo</option>
+                <option value="m1" class="mm">SSLC</option>
+            </select><br><br>
+            <label>DOB</label><br>
+            <input type="date" ><br><br>
+            <label>Mobile no.</label><br>
+            <input type="number"><br><br>
+            <label>Address</label><br>
+            <textarea style="height: 60px; width: 312px;"></textarea><br><br>
+            <input type="submit" name="sut">
+    </form>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="plus()">Plus</button>
+    <div id="nt">1</div>
+    
+    <script>
+        const nt=document.getElementById('nt');
+
+        let currentNumber= 1;
+
+        function plus(){
+            currentNumber++;
+            nt.innerHTML=currentNumber;
+        }
+        
+    </script>
+</body>
+</html>

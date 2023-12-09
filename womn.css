@@ -1,0 +1,96 @@
+
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: 0px;
+        }
+        body{
+            padding: 10px;
+            background-image: url("C:/Users/Binu/Pictures/Saved Pictures/wmn22-transformed.jpeg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            background-size: cover;
+        
+        }
+        #img1{
+            margin-left: 615px;
+        }
+        #head{
+            animation: clr 4s linear infinite;
+        }
+        #head{
+           --color-1:red;
+            --color-2:blue;
+            --color-3:green;
+        }
+        @keyframes clr{
+            0% {color:var(--color-1)}
+            50% {color: var(--color-2)}
+            100% {color: var(--color-3)}
+        }
+        .emp{
+            width: 600px;
+            height: 350px;
+            border: 0px solid black;
+            margin-left: 700px;
+            margin-top: 50px;
+        }
+       
+        .mre{
+            margin-left: 1000px;
+            margin-top: -400px;   
+        }
+       
+        .list li{
+            display:inline-block;
+            padding:15px;
+            color: blue;
+            font-family:monospace;
+            font-weight: bold;
+            font-size: large;
+            margin-top: -20px;
+            
+        }
+        .list li:hover{
+            color: crimson;
+            cursor: pointer;
+        }
+        h2{
+            color:deeppink;
+            font-family:fantasy;
+            text-align: center;
+        }
+        
+        #M0{
+            border: 0px;
+            color: red;
+            margin-top: -8px;  
+            /* margin-left: 0px; */
+        }
+        .list li a{
+            text-decoration: none;
+            color: blue;
+        }
+        .list li a:hover{
+            color:crimson;
+        }
+        #E0{
+            border: 0px;
+            color: red;
+            margin-left: 115px;
+            margin-top: -8px; 
+        }
+        .hsg{
+            /* height: 300px; */
+            width: 550px;
+            border: 0px solid white;
+            background-color: darkslategray;
+            color: gold;
+            border-radius: 15px;
+            opacity: .8;
+        }
+        .hsg h2{
+            color:rgb(0, 174, 255);
+            font-family: 'Trebuchet MS';
+        }

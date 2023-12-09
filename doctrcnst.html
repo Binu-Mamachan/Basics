@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            background-image: url("C:/Users/Binu/Documents/stethoscope-2617701_640.jpg");
+            background-position: center;
+            background-size:cover;
+            background-repeat: no-repeat;
+            
+        }
+        form{
+            border: 0px solid white;
+            box-shadow: 2px 8px 10px rgba(255, 255, 255, 0.637);
+            border-radius: 15px;
+            width:300px;
+            display:flex;
+            flex-direction: column;
+            padding: 10px;
+            margin-left: 1000px;
+            margin-top: 10px;
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid #000000;
+            background-color:rgba(47, 79, 79, 0.733);
+            
+        
+        }
+        
+        input{
+            margin-top: 10px;
+            padding: 5px;
+            outline: none;
+            background: transparent;
+            border:none;
+
+        }
+        input[type=submit]:hover{
+            color:blanchedalmond;
+            cursor: pointer;
+        }
+
+    </style>
+    <body>
+        
+        <form method="get" action="#"target="_blank">
+            <h2 align="center">Doctor Consultancy</h2><br><br>
+            
+            <label>Date for Appointment</label>
+            <input type="date" name="date"><br>
+            <label>Which Doctor Want To Consult</label><br>
+            <select name="M" id="M0" onchange="sub()" style="background: transparent; border:none;"><br>
+                <option >select</option>
+                <option value="m1" class="mm">Neurologists</option>
+                <option value="m2" class="mm">Oncologists</option>
+                <option value="m3" class="mm">Pediatricians</option>
+                <option value="m4" class="mm">Gynecologists</option>
+                <option value="m5" class="mm">Opthalmologists</option>
+            </select><br>
+            <label>Problem</label><br>  
+            <textarea style="height: 60px; background: transparent;border:none;outline: none;" placeholder="enter here!..."></textarea><br>
+            <input type="submit" name="sut">
+        </form>
+    </body>
+    </html>  

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="exp"></h1>
+    <h1 id="epp"></h1>
+    <script>
+        let text="";
+        const laptop={brand:"hp",
+                    color:"silver",
+                    storage:"8gb",
+                    model:[{ mod1:["d1","d2"],mod2:["m1,m2,m3"]}]
+        };
+        // let a="model";
+        // let b="mod2";
+        //  delete laptop.storage;
+        // for(let i in laptop){
+        //     text += laptop[i]+"  ";
+        // }
+        for(let i in laptop.model){
+            text+=laptop.model[i].mod1;
+            for(let j in laptop.model[i].mod2){
+                text+=laptop.model[i].mod2[j];
+            }
+        }
+        document.getElementById("exp").innerHTML=text;
+        // const laptop=new Object();
+        // laptop.brand="hp";
+        // laptop.color="white";
+        // laptop.storage="16gb";
+        // laptop.model="pavilion";
+        // document.getElementById("epp").innerHTML=laptop["brand"];
+        // document.getElementById("exp").innerHTML=laptop[a][b];
+    </script>
+</body>
+</html>

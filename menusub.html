@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .button
+        {
+            background-color: blue;
+            color: white;
+            padding: 10px;
+            font-size: medium;
+            border: none;
+            cursor: pointer;
+            margin-left: 50px;
+            margin-top: 50px;
+        }
+        .dropdown
+        {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content
+        {
+            display: none;
+            position: absolute;
+            background-color: rgb(96, 128, 0);
+            min-width: 10px;
+            box-shadow: 5px 5px 5px white;
+            z-index: 1;
+            margin-left: 40%;
+        }
+        .dropdown-content a
+        {
+            color: black;
+            padding: 20px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown:hover .dropdown-content
+        {
+            display: block;
+        }
+        .dropdown:hover .button
+        {
+            background-color: blueviolet;
+        }
+        .dropdown-content a:hover
+        {
+            background-color: blueviolet;
+        }
+        /*.Veg
+        {
+            position: relative;
+            display: inline-block;
+        }*/
+        .Veg
+        {
+            display: none;
+            position: absolute;
+            background-color: rgb(96, 128, 0);
+            min-width: 10px;
+            box-shadow: 5px 5px 5px white;
+            z-index: 1;
+            margin-left: 100px;
+        }
+        .Veg a
+        {
+            color: black;
+            padding: 20px;
+            text-decoration: none;
+            display: block;
+        }
+        .Vegetables:hover .Veg
+        {
+            display: block;
+        }
+        .Veg a:hover
+        {
+            background-color: blueviolet;
+        }
+        .Fru
+        {
+            display: none;
+            position: absolute;
+            background-color: rgb(96, 128, 0);
+            min-width: 10px;
+            box-shadow: 5px 5px 5px white;
+            z-index: 1;
+            margin-left: 100px;
+        }
+        .Fru a
+        {
+            color: black;
+            padding: 20px;
+            text-decoration: none;
+            display: block;
+        }
+        .Fruits:hover .Fru
+        {
+            display: block;
+        }
+        .Fru a:hover
+        {
+            background-color: blueviolet;
+        }
+        .Leafy
+        {
+            display: none;
+            position: absolute;
+            background-color: rgb(96, 128, 0);
+            min-width: 10px;
+            box-shadow: 5px 5px 5px white;
+            z-index: 1;
+            margin-left: 60px;
+        }
+        .Leafy a
+        {
+            color: black;
+            padding: 20px;
+            text-decoration: none;
+            display: block;
+        }
+        .Leafy-vegetables:hover .Leafy
+        {
+            display: block;
+        }
+        .Leafy a:hover
+        {
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <div class="dropdown">
+        <button class="button">Food Items</button>
+        <div class="dropdown-content">
+            <div class="Vegetables">
+            <a href="#">Vegetables</a>
+                <div class="Veg">
+                  <a href="#">Tomato</a>
+                  <a href="#">Potato</a>
+                  <a href="#">Brinjal</a>
+                  <a href="#">Carrot</a>
+                </div>
+            </div>
+            <div class="Fruits">
+            <a href="#">Fruits</a>
+                <div class="Fru">
+                    <a href="#">Banana</a>
+                    <a href="#">Apple</a>
+                    <a href="#">Orange</a>
+                    <a href="#">Dragon Fruit</a>
+                </div>
+            </div>
+            <div class="Leafy-vegetables">
+            <a href="#">Leafy Vegetables</a>
+                <div class="Leafy">
+                    <a href="#">Spinach</a>
+                    <a href="#">Cabbage</a>
+                    <a href="#">Cauliflower</a>
+                    <a href="#">Broccoli</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

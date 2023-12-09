@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BM</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: 0px;
+        }
+        .boddy{
+            position: relative;
+            background-image: url("C:/Users/Binu/Downloads/bg34 (1).png");
+            opacity:1;
+            background-position: center;
+            background-size:cover;
+            background-repeat: no-repeat;
+        }
+        .nav1{
+            
+            background-color:rgba(0, 0, 0, 0.986);
+            height: 60px;
+            /* position: fixed; */
+            width: 100%;
+        
+        }
+        h4{
+            position: absolute;
+            margin-left: 40px;
+            margin-top: 20px;
+            font-family: Bodoni MT white;
+            font-size: large;
+            font-weight: bold;
+            color:whitesmoke;;
+        }
+        .nav1 li{
+            display: inline-block;
+            margin-top: 20px;
+        }
+        .nav1 li a{
+            text-decoration: none;
+            padding: 30px;
+            font-family: Yu Gothic;
+            font-size: large;
+            font-weight: bold;
+            color:whitesmoke;
+        }
+        .list1{
+            margin-left:680px;
+        }
+        .nav1 li a:hover{
+            color:gray;
+        }
+        .nav3{
+            position:absolute;
+            margin-top: -300px;
+            margin-left: 470px;
+        }
+        p1{
+            position: absolute;
+            text-align:center;
+            margin-left: 10px;
+            font-family: Lucida Handwriting;
+            color:rgba(255, 255, 0, 0.548);
+        }
+        #hed{
+            
+            font-weight: bolder;
+            font-size: 50px;
+            text-align: center;
+        }
+        .side1{
+            position: absolute;
+            background-color: beige;
+            width: 30px;
+            margin-top: -310px;
+            /* display: none; */
+
+        }
+        /* .nav2:hover .side1{
+            position: absolute;
+            display: block;
+        } */
+       
+        .side1 li a{
+            display: block;
+            background-color: rgba(0, 255, 255, 0.144);
+            height: 40px;
+            padding: 10px;
+        }
+        .base{
+            background-color: rgba(0, 0, 0, 0.603);
+            margin-top: -10px;
+        
+        }
+        #abt{
+            text-align: center;
+            font-size:40px;
+             font-family:Lucida Console;
+             color: bisque;
+             padding: 20px;
+        }
+        p2{
+        
+            display: flex;
+            justify-content: center;
+            color: white;
+            font-size: larger;
+            padding: 30px;
+        }
+        .line{
+            height: 5px;
+            width: 50px;
+            background-color: aqua;
+            border-radius: 70px;
+            margin-left: 650px;
+        }
+        .side2{
+            width: 300px;
+            height: 200px;
+            padding: 10px;
+            text-align: justify;
+            color: aliceblue;
+            margin-left: 100px;
+        }
+        #knw{
+            font-size: 25px;
+            padding: 20px;
+
+        }
+        .cnt{
+            border: 0px solid black;
+            background-color: aqua;
+            text-decoration: none;
+            padding: 5px;
+            font-size: large;
+            position: absolute;
+            margin-top: 20px;
+            margin-left: 0px;
+            color: black;
+        }
+        .cnt:hover{
+            background-color:aliceblue;
+        }
+        .skl{
+            margin-left: 700px;
+            margin-top: -205px;
+            color: white;
+        }
+        .prj{
+            background-color: rgba(0, 0, 0, 0.568);
+        }
+
+
+        #portfolio{
+    padding: 50px 0;
+    margin-top: -80px;
+}
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.work{
+    border: 2px solid red;
+    border-radius: 10px;
+    position: relative;
+    overflow: block;
+}
+.work img{
+    width:100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+.layer{
+    width: 200px;
+    height: 0;
+    background: linear-gradient(#868f96,#596164);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.layer a{
+    margin-top: 20px;
+    color:black;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+.work:hover img{
+    transform: scale(1.1);
+    border: 1px solid red;
+}
+.work:hover .layer{
+    height:200px;
+}
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid white;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color:white;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background:rgba(0, 0, 0, 0.199);
+}
+.contact{
+    margin-top: -80px;
+}
+.form{
+    /* margin-left: 600px; */
+    border: 1px solid white;
+    border-radius: 30px;
+    background-color:rgba(255, 255, 255, 0.466);
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    margin-left: 380px;
+    padding: 50px;
+    padding-bottom: 20px;
+   
+}
+.form input{
+    padding: 10px;
+    display: grid;
+    width: 400px;
+    border: 0px;
+    
+}
+input[type=submit]{
+   width: 423px;
+}
+input[type=submit]:hover{
+    background-color: rgba(0, 0, 0, 0.144);
+}
+.foot{
+    height: 250px;
+    background-color:rgba(0, 0, 0, 0.308) ;
+    margin-top: 0px;
+    border-radius: 0px;
+}
+.foot h4{
+    /* margin-top: 20px; */
+    margin-left: 50px;
+    color: black;
+}
+.foot p4{
+    position: absolute;
+    margin-top: 60px;
+    margin-left: 50px;
+}
+.si4{
+    margin-left: 1200px;
+    margin-top:40px;
+    position:absolute;
+}
+.si4 li{
+    display: inline;
+    padding: 10px;
+    
+}
+.icon1{
+    color:black;
+}
+.copy{
+    margin-top: 170px;
+}
+.copy p6{
+    display: flex;
+    justify-content: center;
+}
+
+</style>
+</head>
+<body>
+    <div class="boddy">
+    <div class="nav1">
+        <h4 id="nm">Binu Mamachan</h4>
+            <div class="list1">
+        <ul type="none">
+            <li><img src=""></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#abts">About</a></li>
+            <li><a href="#prj">Projects</a></li>
+            <li><a href="#">Resume</a></li>
+            <li><a href="#call">Contact</a></li>
+        </ul>
+    </div>
+    </div>
+    <div class="nav2">
+        <img src="C:\Users\Binu\Pictures\Saved Pictures\for\bg-1.jpg" width="100%" height="600px">
+    </div>
+    <div class="nav3">
+        <h1 style="color:aliceblue" id="hed">Hey, I'm BINU MAMACHAN</h1><br>
+        <p1>A Frontend focused Web Developer building the Frontend of Websites and Web Applications
+             that leads to the success of the overall product.</p1>
+    </div>
+    <div class="side1">
+        <ul type="none">
+            <li><a href="#"><i class="fa fa-twitter icon"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin icon"></i></a></li>
+            <li><a href="#"><i class="fa fa-github icon"></i></a></li>
+        </ul>
+    </div>
+    <div class="base" id="abts">
+    <h1 id="abt">About Me</h1>
+    <div class="line"></div>
+    <p2 >Here you will find more information about me, what I do, 
+        and my current skills mostly in terms of programming and technology</p2>
+        <div class="side2">
+            <h1 id="knw">Get To Know Me !</h1>
+            <p3>I'm a Frontend Web Developer building the Front-end of Websites and Web Applications that
+                 leads to the success of the overall product. Check out some of my work in the Projects section.<br> I'm open
+                  to Job opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills 
+                  and experience then don't hesitate to contact me.
+                </p3><br>
+                <a href="./" class="cnt">Contact</a>
+            </div>
+           
+            <div class="skl">
+                <h1 id="knw">My Skills</h1>
+                <img src="C:\Users\Binu\Downloads\232.png" width="500px" height="200px">
+            </div>
+        </div>
+        <div class="prj" id="prj">
+        <h1 id="abt">Projects</h1>
+        <div class="line"></div>
+        <p2 >Here you will find some of the personal  projects that I created.</p2>
+    </div>
+    
+    <div id="portfolio">
+        <div class="container">
+            <!-- <h1 class="sub-title">My Work</h1> -->
+            <div class="work-list">
+                <div class="work">
+                    <img src="C:\Users\Binu\Downloads\wrk2.jpg">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connected you to the talented people around the world.
+                            Download it from play store.
+                        </p>
+                        <!-- <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a> -->
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="C:\Users\Binu\Downloads\wrk3.jpg">
+                    <div class="layer">
+                        <h3>Campus Management website</h3>
+                        <p>The app connected you to the talented people around the world.
+                            Download it from play store.
+                        </p>
+                        <!-- <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a> -->
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="C:\Users\Binu\Downloads\wrk1.jpg">
+                    <div class="layer">
+                        <h3>Ecommerce App</h3>
+                        <p>The app connected you to the talented people around the world.
+                            Download it from play store.
+                        </p>
+                        <!-- <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a> -->
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <div class="contact">
+        <h1 id="abt">Contact</h1>
+        <div class="line"></div>
+        <p2 >Feel free to Contact me by submitting the form below and I will get back to you as soon as possible.</p2>
+    </div>
+    <div class="form" id="call">
+        <form method="post" target="_blank" action="">
+            <label> Name</label><br><br><input type="text" placeholder=" Enter Your Name"><br>
+            <label>Email</label><br><br><input type="email" placeholder=" Enter Your Email"><br>
+            <label>Message</label><br><br>
+            <textarea style="height: 100px; width: 420px; border:0px;" placeholder="enter here!..."></textarea><br><br>
+            <input type="submit" value="submit"> 
+        </form>
+       </div><br>
+    </div>
+       <div class="foot">
+        <h4>Binu Mamachan</h4><br>
+        <p4>A Frontend focused Web Developer building the Frontend of Websites and Web Applications<br>
+             that leads to the success of the overall product</p4>
+       
+       <div class="si4">
+        <ul type="none">
+            <li><a href="#"><i class="fa fa-twitter icon1"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin icon1"></i></a></li>
+            <li><a href="#"><i class="fa fa-github icon1"></i></a></li>
+        </ul>
+    </div>
+    <div class="copy">
+    <hr color="black" id="hr"><br>
+    
+    <p6>copyright2023.developed by  <hr color="white"> BINU MAMACHAN</p6>
+</div>
+</div>
+</div>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+        }
+        form{
+            border:0px solid black;
+            background-color:cornflowerblue;
+            /* box-shadow: 10px 12px 18px cornflowerblue; */
+            border-radius: 30px;
+            width: 200px;
+            height: 230px;
+            padding: 20px;
+            margin-left:25px;
+            margin-top:25px;
+        }
+        input{
+            display: flex;
+            flex-direction: column;
+            padding: 5px;
+            width: 170px;
+            border: 0px;
+            border-radius: 30px;
+
+        }
+        input[type=submit]{
+            width:60px;
+            margin-left:60px;
+            margin-top: 0px;
+            border: 0px;
+            border-radius: 30px;
+            /* background-color: rgb(34, 219, 59); */
+            
+        }
+    
+        label{
+            font-size:large;
+        }
+        .div1{
+            border: 2px solid rgb(19, 206, 112);
+            width: 600px;
+            height: 350px;
+            margin-left: 400px;
+            margin-top: 120px;
+            background-color:rgb(19, 206, 112);
+        }
+        h1{
+            margin-left:260px;
+            margin-top: -180px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="div1">
+    <form method="post">
+        <label> Enter New Password</label><br><br>
+        <input type="password" name="hpass"><br><br>
+        <label> Re-enter Password</label><br><br>
+        <input type="password" name="rpass"><br><br>
+        <input type="submit" value="confirm" name="sub">
+        <h1>ChangePassword</h1>
+        </form>
+    </div>
+</body>
+</html>

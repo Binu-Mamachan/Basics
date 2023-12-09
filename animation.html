@@ -1,0 +1,141 @@
+v   <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="funname()">
+    <canvas height="500px"width="500px"style="border:5px solid black;" id="canvas">
+    </canvas>
+    <script>
+        function funname(){
+            var mycanvas = document.getElementById("canvas");
+            var context =mycanvas.getContext("2d");
+            context.beginPath();
+            context.fillStyle="yellow";
+            // context.shadowBlur=30;
+            // context.shadowColor='yellow';
+            context.arc(150,150,100,2*Math.PI,0); 
+            context.fill();
+            context.closePath();
+            context.beginPath();
+            context.fillStyle="red";
+            context.arc(110,120,10,2*Math.PI,0); 
+            context.fill();
+            context.closePath();
+            context.beginPath();
+            context.fillStyle="red";
+            context.arc(190,120,10,2*Math.PI,0); 
+            context.fill();
+            context.closePath();
+            context.beginPath();
+            context.fillStyle="white";
+            context.arc(110,120,5,2*Math.PI,0); 
+            context.fill();
+            context.closePath();
+            context.beginPath();
+            context.fillStyle="white";
+            context.arc(190,120,5,2*Math.PI,0); 
+            context.fill();
+            context.closePath();
+            context.beginPath();
+            context.fillStyle="black";
+            context.arc(150,180,20,0,Math.PI); 
+            context.fill(); 
+            context.closePath();
+            context.beginPath();
+            context.fillStyle="black";
+            context.arc(150,180,30,Math.PI,2*Math.PI); 
+            context.fill();
+            context.stroke();
+            context.closePath();
+            
+            context.beginPath();
+            context.fillStyle="red";
+            // context.shadowBlur=30;
+            // context.shadowColor='yellow';
+            context.arc(380,150,100,2*Math.PI,0); 
+            context.fill();
+            context.closePath();
+            context.beginPath();
+            context.fillStyle="black";
+            context.arc(340,120,10,2*Math.PI,0); 
+            context.fill();
+            context.closePath();
+            context.beginPath();
+            context.fillStyle="black";
+            context.arc(420,120,10,2*Math.PI,0); 
+            context.fill();
+            context.closePath();
+            context.beginPath();
+            context.fillStyle="white";
+            context.arc(340,120,5,2*Math.PI,0); 
+            context.fill();
+            context.closePath();
+            context.beginPath();
+            context.fillStyle="white";
+            context.arc(420,120,5,2*Math.PI,0); 
+            context.fill();
+            context.closePath();
+            context.beginPath();
+            context.fillStyle="black";
+            context.arc(380,180,30,2*Math.PI,Math.PI); 
+            context.fill();
+            context.stroke();
+            context.closePath();
+            context.beginPath();
+            context.fillStyle="black";
+            context.arc(340,110,20,Math.PI,2*Math.PI); 
+            context.stroke();
+            context.closePath();
+            context.beginPath();
+            context.fillStyle="black";
+            context.arc(420,110,20,Math.PI,2*Math.PI); 
+            context.stroke();
+            context.closePath();
+
+            context.beginPath();
+            context.fillRect(100,350,300,50);
+            context.closePath();
+
+            context.beginPath();
+            context.moveTo(250,250);
+            context.lineTo(360,360);
+            context.lineTo(150,360);
+            context.closePath();
+            context.stroke();
+            
+
+            context.beginPath();
+            context.fillStyle="red";
+            context.arc(140,400,30,0,2*Math.PI); 
+            context.fill();
+            context.stroke();
+            context.closePath();
+            context.beginPath();
+            context.fillStyle="white";
+            context.arc(140,400,20,0,2*Math.PI); 
+            context.fill();
+            context.stroke();
+            context.closePath();
+            context.beginPath();
+            context.fillStyle="red";
+            context.arc(350,405,30,0,2*Math.PI); 
+            context.fill();
+            context.stroke();
+            context.closePath();
+            context.beginPath();
+            context.fillStyle="white";
+            context.arc(350,405,20,0,2*Math.PI); 
+            context.fill();
+            context.stroke();
+            context.closePath();
+            context.beginPath();
+            context.moveTo(10,500);
+            context.lineTo(50,50);
+            context.stroke();
+        }
+    </script>
+</body>
+</html>

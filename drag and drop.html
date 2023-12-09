@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #getData {
+            width:300px;
+            height:250px;
+            padding:10px;
+            border:5px solid red;
+            margin-left: 100px;
+        }
+        #getDatai{
+            width:300px;
+            height:250px;
+            padding:10px;
+            border:5px solid blue;
+            margin-left: 500px;
+            margin-top: -300px;
+
+        }
+        #getDataii{
+            width:300px;
+            height:250px;
+            padding:10px;
+            border:5px solid green;
+            margin-left:300px;
+
+        }
+        #getDataiii{
+            width:300px;
+            height:250px;
+            padding:10px;
+            border:5px solid yellow;
+            margin-left: 700px;
+            margin-top: -300px;
+
+        }
+
+    </style>
+    <script>
+        function allowDrop(even){
+            even.preventDefault();
+        }
+        function drag(even){
+            even.dataTransfer.setData("img",even.target.id);
+        }
+        function drop(even){
+            even.preventDefault();
+            var fetchData=even.dataTransfer.getData("img");
+            even.target.appendChild(document.getElementById(fetchData));
+        }
+    </script>
+</head>
+<body>
+    <div id="getData"
+        ondrop="drop(event)"
+        ondragover="allowDrop(event)">
+    </div>
+    <br>
+    <div id="getDatai"
+        ondrop="drop(event)"
+        ondragover="allowDrop(event)">
+    </div>
+    <br>
+    <div id="getDataii"
+        ondrop="drop(event)"
+        ondragover="allowDrop(event)">
+    </div>
+    <br>
+    <div id="getDataiii"
+        ondrop="drop(event)"
+        ondragover="allowDrop(event)">
+    </div>
+    
+</div>
+<br>
+    <img id="dragData"
+    src="C:\Users\Binu\Pictures\images (2).jpg"
+    draggable="true"
+    ondragstart="drag(event)"
+    width="300"
+    height="250">
+
+    <img id="dragDatai"
+    src="C:\Users\Binu\Pictures\3516536.jpg"
+    draggable="true"
+    ondragstart="drag(event)"
+    width="300"
+    height="250"
+    
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin-top: 0px;
+            padding: 0px;
+        }
+        h1{
+            color:midnightblue;
+            text-align: center;
+        }
+         th,td{
+            border: 1px solid black;
+            padding: 15px;
+        }
+        .bio{
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+        label{
+            margin-left: 20px;
+        }
+        input{
+            margin-left: 10px;
+            
+        }
+        table{
+            margin-top: 50px;
+            margin-left: 550px;
+           
+        }
+        table th,td{
+            width: 100px;
+        }
+        h1{
+            margin-top: 30px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>YOUR SCORE DETAILS</h1>
+        <div class="bio">
+            <label>Name</label><input type="text" value ="%s">
+            <label>RegisterNo</label><input type="text" value ="%s">
+            <label>Batch </label><input type="text" value ="%s"><br>
+            <label>DOB</label><input type="date" value ="%s">
+            </div>
+
+<table>
+<div class="mark">
+    <tr>
+    <td>Maths</td>
+    <td>%s</td>
+    </tr>
+    <tr>
+    <td>Physics</td>
+    <td>%s</td>
+    </tr>
+    <tr>
+    <td>Chemistry</td>
+    <td>%s</td>
+    </tr>
+    <tr>
+    <td>Biology</td>
+    <td>%s</td>
+    </tr>
+    <tr>
+    <td>English</td>
+    <td>%s</td>
+    </tr>
+</div>
+    </table>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .img{
+            position: absolute;
+            display: flex;
+            margin-top: 100px;
+            padding: 20px;
+            animation: imgz 6s linear 0s infinite alternate-reverse;
+        }
+        @keyframes imgz{
+            0%{ right:600px;}
+            100%{ right:300px}
+        }
+        .msg{
+            margin-top: 50px;
+            animation:blink 1s linear infinite ;
+            color:crimson;
+        }
+        @keyframes blink {
+            50%{
+                opacity:0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="img">
+    <img src="C:\Users\Binu\Pictures\Saved Pictures\15.jpg" width="150px" height="200px">  
+    <img src="C:\Users\Binu\Pictures\Saved Pictures\15-1.jpg" width="150px" height="200px">
+    <img src="C:\Users\Binu\Pictures\Saved Pictures\15-2.jpg" width="150px" height="200px">
+    <img src="C:\Users\Binu\Pictures\Saved Pictures\15-3.jpg" width="150px" height="200px">
+</div>
+<div class="mesg">
+    <marquee class = "msg"> PlaySchool Admission Started</marquee>
+</div>
+    
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="mthrchld.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript"
+    src="http://translate.google.com/translate_a/element.js?cb=translate">
+    </script>
+</head>
+<body>
+    <div class="mthrchd">
+        <div class="header">
+
+            <header>
+                <ul type ="none">
+                    <div class="icon">
+                        <li><i class="fa fa-envelope icon"></i><a href="">-srisacnewton@gmail.com</a></li>
+                        <div class="icons1">
+                        <li></li><a href=""><i class="fa fa-instagram"></i></a></li>
+                        <li></li><a href=""><i class="fa fa-facebook"></i></a></li>
+                        <li></li><a href=""><i class="fa fa-twitter"></i></a></li>
+                        </div>
+                        <div id="chnge"></div>
+                        <script type="text/javascript">
+                        function translate(){
+                            new google.translate.TranslateElement(
+                                {pageLanguage:'',layout: google.translate.TranslateElement.InlineLayout.SIMPLE},
+                            'chnge'
+                            );
+                        }
+                        </script>
+                    </div>
+                </ul>
+            </header>
+        </div>
+                <div class="nav">
+                    <img src="C:\Users\Binu\Downloads\logo-removebg-preview.png " id="img1" width="100px"height="100px">
+                    <h1>ALERT!.......</h1><br>
+                    <P1>Mother&Child Supporting Platform</P1>
+                </div>
+                <div class="nav1">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Schemes</a></li>
+                        <li><a href="#">Media</a></li>
+                    </ul>
+                </div>
+                    <div class=" loger">
+                            <button onclick="document.getElementById('id01').style.display='block'" id="btn">Login</button>
+                        <div id="id01" class="modal">
+                            
+                            <form method="post" action="#">
+                        <div class="top">
+                            <i class="fa fa-user user"style="font-size:50px"></i>
+                            <h2>Login</h2><br>
+                        </div>
+                            <input type="text" placeholder="userid"><br><br>
+                            <input type="password" placeholder="enter your password">
+                            <i class="fa fa-eye  lg" ></i><br>
+                            <input type="submit" value="submit"><br>
+                            <a href="">Register</a>
+                            <div class="fg">
+                            <a href="">Forgot password</a>
+                            </div>  
+                            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancel">Cancel</button> 
+                        </div>
+                    </form>
+                    </div>
+    <div class="imgs">
+        <img class="crsl" src="C:\Users\Binu\Pictures\Saved Pictures\for\crsl 5.jpg" style="width:100%">
+        <img class="crsl" src="C:\Users\Binu\Pictures\Saved Pictures\for\edctn.jpg" style="width:100%">
+        <img class="crsl" src="C:\Users\Binu\Pictures\Saved Pictures\for\crsl4.jpg" style="width:100%">
+        <img class="crsl" src="C:\Users\Binu\Pictures\Saved Pictures\for\crsl6.jpg" style="width:100%">
+        <img class="crsl" src="C:\Users\Binu\Pictures\Saved Pictures\for\crsl9.jpg" style="width:100%">
+        <img class="crsl" src="C:\Users\Binu\Pictures\Saved Pictures\for\crsl8.jpg" style="width:100%">
+        </div>
+        <div class="click">
+            <ul type="none">
+                <li><img class="img3" src="C:\Users\Binu\Downloads\wmn-removebg-preview.png" width="100px" height="100px"><br><a href="" id="nav3">WOMEN</a></li>
+                <li><img class="img3" src="C:\Users\Binu\Downloads\snrc-removebg-preview.png" width="100px" height="100px"><br><a href="" id="nav3">SENIOR CITIZEN</a></li>
+                <li><img class="img3" src="C:\Users\Binu\Downloads\mthr-removebg-preview (1).png" width="100px" height="100px"><br><a href="" id="nav3">MOTHER&CHILD</a></li>
+                <li><img class="img3" src="C:\Users\Binu\Downloads\chld_l-removebg-preview.png" width="100px" height="100px"><br><a href="" id="nav3">CHILD</a></li>
+            </ul>
+        </div>
+        <footer>
+            <div class="ftr">
+            <p3>website designed by BM</p3>
+            </div>
+        </footer>
+    </div>
+    <script>
+        var sdnx = 0;
+        showDivs();
+        // function plusDivs(n){
+        //     showDivs(sdnx +=n);
+        // }
+        function showDivs(){
+            var i;
+            var x =document.getElementsByClassName("crsl");
+            // if (n > x.length){sdnx = 1}
+            // if (n < 1){sdnx=x.length}
+            for (i=0; i < x.length;i++){
+                x[i].style.display = "none";
+            }
+            sdnx++;
+            if (sdnx > x.length){sdnx = 1}
+            x [sdnx-1].style.display = "block";
+            setTimeout(showDivs,5000);
+        } 
+        // Get the modal
+        var modal = document.getElementById('id01');
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            background-image: url("C:/Users/Binu/Downloads/mcccd-transformed.png");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        form{
+            border: 0px solid white;
+            box-shadow: 2px 8px 10px rgba(255, 255, 255, 0.637);
+            border-radius: 15px;
+            width:250px;
+            display:flex;
+            flex-direction: column;
+            padding: 10px;
+            margin-left: 550px;
+            margin-top: 200px;
+            background-color:rgba(105, 105, 105, 0.541)
+        
+        }
+        input{
+            width: 200px;
+            margin-left: 20px;
+            margin-top: 20px;
+            padding: 10px;
+            border: 0px;
+            box-shadow: 4px 8px 10px rgba(255, 255, 255, 0.575);
+            outline: none;
+
+        }
+        input[type=submit]{
+            width: 80px;
+            margin-left:80px;
+            padding: 5px;
+            border: 0px;
+            background-color:dimgrey;
+            box-shadow: none;
+        }
+        input[type=submit]:hover{
+            background-color: chartreuse;
+        }
+        h1{
+            color:darkslategray;
+            text-align: center;
+        }
+        .icon{
+            margin-left: 215px;
+            margin-top: -28px;
+        }
+        .user{
+            margin-left: 105px;
+        }
+        .fg{
+            margin-left: 123px;
+            margin-top: -20px;
+            /* font-weight: bold; */
+        }
+        a{
+            text-decoration: none;
+            /* font-weight: bold; */
+            color: rgba(0, 0, 255);
+        }
+    </style>
+</head>
+<body>
+    
+    <form method="post" action="#">
+        <div class="login"></div>
+        <i class="fa fa-user user"style="font-size:50px; color:green;"></i>
+        <h1>Login</h1><br><br>
+        <input type="email" placeholder="enter your username">
+        <i class="fa fa-user icon"></i><br><br>
+        <input type="password" placeholder="enter your password">
+        <i class="fa fa-lock  icon" ></i><br>
+        <input type="submit" value="submit"><br>
+        <a href="">Register</a>
+        <div class="fg">
+        <a href="">Forgot password</a>
+    </div>
+    </div>    
+</form>
+</body>
+</html>

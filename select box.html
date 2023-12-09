@@ -1,0 +1,78 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+  <body>
+    <label>course</label>
+    <select name="course" id="main" onchange="funname()">
+        <option value="c0" hidden id="c0">select</option>
+        <option value="c1" id="c1">medical</option>
+        <option value="c2" id="c2">Engineering</option>
+        <option value="c3" id="c3">others</option>
+    </select><br>
+    <select name="M" id="M0">
+        <option value="M" hidden>select</option>
+        <option value="m1">MBBS</option>
+        <option value="m2">BAMS</option>
+        <option value="m3">DENTAL</option>
+    </select>
+    <select name="E" id="E0">
+        <option value="E" hidden>select</option>
+        <option value="E1">Mechanical Eng</option>
+        <option value="E2">Civil Eng</option>
+        <option value="E3">Electrical Eng</option>
+    </select>
+    <select name="O" id="o0">
+        <option value="o" hidden>select</option>
+        <option value="O1">BSC</option>
+        <option value="O2">BCOM</option>
+        <option value="O3">BA</option>   
+    </select>
+    <script>
+        document.getElementById("M0").style.display="none";
+        document.getElementById("E0").style.display="none";
+        document.getElementById("o0").style.display="none";
+        function funname()
+        {
+            var a=document.getElementById("main").value;
+            var b=document.getElementById("c1").value;
+            var c=document.getElementById("c2").value;
+            var d=document.getElementById("c3").value;
+            if(a==b)
+            {
+                document.getElementById("M0").style.display="block";
+                var box = document.getElementById("E0")
+                var box = document.getElementById("o0")
+                box.selectedIndex = 0;
+            }
+            else{
+                document.getElementById("M0").style.display="none";
+            }
+            if(a==c)
+            {
+                document.getElementById("E0").style.display="block";
+                var box = document.getElementById("o0")
+                var box = document.getElementById("M0")
+                box.selectedIndex = 0;
+            }
+            else{
+                document.getElementById("E0").style.display="none";
+            }
+            if(a==d)
+            {
+                document.getElementById("o0").style.display="block";
+                var box = document.getElementById("M0")
+                var box = document.getElementById("E0")
+                box.selectedIndex = 0;
+            }
+            else{
+                document.getElementById("o0").style.display="none";
+            }
+            
+        }
+    </script>
+  </body>
+  </html> 
